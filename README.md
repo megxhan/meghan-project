@@ -1,6 +1,6 @@
-# ICJ Project Template
+# ICJ Project by Meghan
 
-A Node-based template system with a Gulp workflow set up for Github Pages publishing.
+A class project by Meghan Nguyen for ICJ. 
 
 Features:
 
