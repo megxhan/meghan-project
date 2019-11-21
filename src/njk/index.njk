@@ -6,24 +6,28 @@
 
 <div class="container">
   <div class="row">
-    <div class="col">
-    <h1>Main headline</h1>
-    <p class="author">By Obi-Wan Kenobi</p>
-    <p class="date"> Published May 25, 1977</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <p>
-        Lucas ipsum dolor <a href="detail-book-example.html">link to book page example</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
+    <div class="col-6 border-right">
+      <h2>Who is Queen?</h2>
+      <p class="author">By Meghan Nguyen</p>
+      <p class="description">Queen was one of the longest-lasting and most commercially successful bands to emerge from the British heavy rock scene of the early 1970s. Formed in London in 1970 following the demise of the band Smile, Queen originally consisted of vocalist Freddie Mercury, guitarist Brian May and drummer Roger Taylor before being joined by bassist John Deacon. The band became popular with audiences via their hit singles, live performances, originality and showmanship, being voted the greatest British band of all time in a national BBC poll. Their Live Aid (1985) performance was voted the best live rock performance of all time in an industry poll. According to the BBC, Queen have sold more than 300 million albums as of 2009.
       </p>
-      <ul> 
-        {% for book in data.books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
-        {% else %}
-          <li>This would display if the 'books' collection were empty</li>
-        {% endfor %}
-     </ul>
+      <p> Source: <a href="https://www.imdb.com/name/nm1277102/bio">IMDb</a>
+      </p>
+      <h3>Band Members</h3>
+      <div class="row">
+        <div class="col-8">
+        {% for member in data.members %} 
+          <div class="card">
+            <img class="card-img-top" src="img/members/{{ member.image }}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ member.name }}</h5>
+              <p class="card-text">{{ member.instruments }}</p>
+              <a href="http://localhost:3000/member-freddie.html" class="btn btn-primary">Read more</a>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
