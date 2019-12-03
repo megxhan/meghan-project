@@ -5,9 +5,18 @@
   <div class="row">
     <div class="col-sm-4 left-rail">
       <img class="img-fluid" src="img/members/{{ member.image }}">
+      <div class="member-border">
+        <h5>{{ member.birthplace }}</h5>
+        <h5>{{ member.birthdate }}</h5>
+        <h5>{{ member.instruments }}</h5>
+        <h5>{{ member.tenure }}</h5>
+      </div>
     </div>
     <div class="col-sm-8">
-      <h2>{{ member.name }}</h2>
+      <h2 class="member-title">{{ member.name }}</h2>
+      <p>{{ member.text | safe }}</p>
+      <h5> </h5>
+      <h5> </h5>
     </div>
   </div>
 </article>
