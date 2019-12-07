@@ -1,6 +1,6 @@
 # ICJ Project by Meghan
 
-A class project by Meghan Nguyen for ICJ. 
+A band website created by Meghan Nguyen for ICJ. 
 
 Features:
 

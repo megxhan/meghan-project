@@ -1,17 +1,17 @@
 {% extends '_layouts/base.njk' %}
 
-{% block page_title %}New index page title{% endblock %}
+{% block page_title %}Home{% endblock %}
 
 {% block content %}
 
 <div class="container">
   <div class="row">
-    <div class="col-6">
+    <div class="col-md-6 col-sm-12">
     <h2>Discography</h2>
     {% for title in data.discography %} 
     <ul class="list-unstyled">
       <li class="media">
-        <img class="mr-3" src="img/discs/{{ title.image }}" alt="album image">
+        <img class="albums mr-3" src="img/discs/{{ title.image }}" alt="album image">
         <div class="media-body">
           <h5 class="mt-0 mb-1">{{ title.title }}</h5>
           <h6>{{ title.year }}</h6>
@@ -20,7 +20,7 @@
     </ul>
     {% endfor %}
     </div>
-    <div class="col-6 border-left">
+    <div class="col-md-6 col-sm-6 border-left">
       <h2>Who is Queen?</h2>
       <p class="author">By Meghan Nguyen</p>
       <p class="description">Queen was one of the longest-lasting and most commercially successful bands to emerge from the British heavy rock scene of the early 1970s. Formed in London in 1970 following the demise of the band Smile, Queen originally consisted of vocalist Freddie Mercury, guitarist Brian May and drummer Roger Taylor before being joined by bassist John Deacon. The band became popular with audiences via their hit singles, live performances, originality and showmanship, being voted the greatest British band of all time in a national BBC poll. Their Live Aid (1985) performance was voted the best live rock performance of all time in an industry poll. According to the BBC, Queen have sold more than 300 million albums as of 2009.
