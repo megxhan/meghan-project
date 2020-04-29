@@ -5,46 +5,17 @@
 {% block content %}
 
 <div class="container">
+
   <div class="row">
-    <div class="col-md-6 col-sm-12">
-    <h2>Discography</h2>
-    {% for title in data.discography %} 
-    <ul class="list-unstyled">
-      <li class="media">
-        <img class="albums mr-3" src="img/discs/{{ title.image }}" alt="album image">
-        <div class="media-body">
-          <h5 class="mt-0 mb-1">{{ title.title }}</h5>
-          <h6>{{ title.year }}</h6>
-        </div>
-      </li>
-    </ul>
-    {% endfor %}
-    </div>
-    <div class="col-md-6 col-sm-6 border-left">
-      <h2>Who is Queen?</h2>
-      <p class="author">By Meghan Nguyen</p>
-      <p class="description">Queen was one of the longest-lasting and most commercially successful bands to emerge from the British heavy rock scene of the early 1970s. Formed in London in 1970 following the demise of the band Smile, Queen originally consisted of vocalist Freddie Mercury, guitarist Brian May and drummer Roger Taylor before being joined by bassist John Deacon. The band became popular with audiences via their hit singles, live performances, originality and showmanship, being voted the greatest British band of all time in a national BBC poll. Their Live Aid (1985) performance was voted the best live rock performance of all time in an industry poll. According to the BBC, Queen have sold more than 300 million albums as of 2009.
-      </p>
-      <p> Source: <a href="https://www.imdb.com/name/nm1277102/bio">IMDb</a>
-      </p>
-      <h3>Band Members</h3>
-      <div class="row">
-        <div class="col-8">
-        {% for member in data.members %} 
-          <div class="card">
-            <img class="card-img-top" src="img/members/{{ member.image }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">{{ member.name }}</h5>
-              <p class="card-text">{{ member.instruments }}</p>
-              <a href="{{ member.slug }}.html" class="btn btn-dark">Read more</a>
-            </div>
-          {% endfor %}
-          </div>
-        </div>
-      </div>
-      <div class="datawrap"><iframe title="Queen's Billboard Hits- weeks on chart" aria-label="Bar Chart" id="datawrapper-chart-CY2Ti" src="//datawrapper.dwcdn.net/CY2Ti/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="592"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script></div>
-    </div>
+    <div class="col-sm-10 offset-sm-1">
+      <h2 class="index-header">Overview</h2>
+      <p>Austin is the capital city of the U.S. state of Texas, as well as the seat and largest city of Travis County, with portions extending into Hays and Williamson counties. It is the 11th-most populous city in the United States, and is the cultural and economic center of the Austin–Round Rock metropolitan statistical area. Located in Central Texas within the greater Texas Hill Country, it is home to numerous lakes, rivers, and waterways, including Lady Bird Lake and Lake Travis on the Colorado River, Barton Springs, McKinney Falls, and Lake Walter E. Long. U.S. News & World Report named Austin the No. 1 place to live in the U.S. for 2017 and 2018.</p>
+      <p>Residents of Austin are known as Austinites. They include a diverse mix of government employees, college students, musicians, high-tech workers, and blue-collar workers. The city's official slogan promotes Austin as "The Live Music Capital of the World", a reference to the city's many musicians and live music venues, as well as the long-running PBS TV concert series Austin City Limits. In recent years, some Austinites have adopted the unofficial slogan "Keep Austin Weird", which refers to the desire to protect small, unique, and local businesses from being overrun by large corporations.</p>
+      <p>By the 1990s, Austin emerged as a center for technology and business. A number of Fortune 500 companies have headquarters or regional offices in Austin, including 3M, Amazon, Apple, Google, IBM, Intel, Oracle, Texas Instruments, and Whole Foods Market. Dell's worldwide headquarters is located in the nearby suburb of Round Rock.</p>
     </div>
   </div>
+
+  {% include "_partials/landmarks.njk" %}
+  {% include "_partials/restaurants.njk" %}
 </div>
 {% endblock %}

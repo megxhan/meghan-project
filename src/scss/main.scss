@@ -1,7 +1,7 @@
 // Custom variable overrides
 // See node_modules/bootstrap/scss/_variables.scss
 
- $body-bg: gray;
+ $body-bg: #889CB8;
 // $body-color: white;
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
@@ -46,4 +46,17 @@ h2, h3, h4, h5 {
 
 .albums {
   width: 75%
+}
+
+.landmarks-border {
+  border: 3px solid black;
+  padding: 5px;
+}
+
+.row {
+  padding: 5px;
+}
+
+.landmarks-box {
+  padding: 10px;
 }

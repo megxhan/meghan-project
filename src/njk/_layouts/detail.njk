@@ -4,19 +4,18 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      <img class="img-fluid" src="img/members/{{ member.image }}">
-      <div class="member-border">
-        <h5>{{ member.birthplace }}</h5>
-        <h5>{{ member.birthdate }}</h5>
-        <h5>{{ member.instruments }}</h5>
-        <h5>{{ member.tenure }}</h5>
+      <img class="img-fluid" src="img/landmarks/{{ landmarks.image }}">
+      <div class="landmarks-border">
+        <h4>{{ landmarks.established }}</h4>
+        <h5>{{ landmarks.location }}</h5>
+        <h5>{{ landmarks.activities }}</h5>
       </div>
     </div>
     <div class="col-sm-8">
-      <h2 class="member-title">{{ member.name }}</h2>
-      <p>{{ member.text | safe }}</p>
-      <h5> </h5>
-      <h5> </h5>
+      <div class= "landmarks-box" style="background-color: white">
+      <h2 class="landmarks-title">{{ landmarks.name }}</h2>
+      <p class="landmarks-text">{{ landmarks.text | safe }}</p>
+      </div>
     </div>
   </div>
 </article>
